@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body" ondragstart="return false;" ondrop="return false;">
+    <div class="wrapper">
+        <h1>Etch A Sketch</h1>
+        <div class="main-container">
+            <div class="left-div">
+                <div class="color-menu">
+                    <div class="color-menu-pen">
+                        <input type="color" id="pen-button" style="background-color: rgb(104, 104, 104);" value=#000000> <p class="stupid">PEN COLOUR</p> </input>
+                    </div>
+                    <div class="color-menu-background">
+                        <input type="color" id="background-button" style="background-color: rgb(104, 104, 104);" value=#ffffff><p class="stupid">BACKGROUND</p></input>
+                    </div>
+                </div>
+                <div class="toggle-menu">
+                    <button  id="toggle-eraser">ERASER</button>
+                    <button  id="toggle-rainbow">RAINBOW MODE</button>
+                </div>
+
+                <div class="grid-menu">
+                    <div class="grid-size-menu">
+                        <div id="slider">
+                            <input type="range" value="16" min="1" max="60" id="grid-size-range" >
+                        </div>
+                        <p class="grid-size">
+                            Grids number:  <span id="grid-size-value">16</span> x <span id="grid-size-value">16</span>
+                        </p>
+                    </div>
+                    <button style="background-color: rgb(104, 104, 104)"; id="grid-lines-button">HIDE GRID</button>
+                </div>
+            </div>
+
+            <div class="grid-container">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+
+
+    
+</body>
+</html>
